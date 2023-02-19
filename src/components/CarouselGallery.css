@@ -1,0 +1,42 @@
+.carousel-gallery-container {
+  
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+  
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+}
+  
+    .slick-dots {
+      bottom: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  
+    .slick-dots li button:before {
+      color: white;
+      opacity: 0.5;
+    }
+  
+    .slick-dots li.slick-active button:before {
+      opacity: 1;
+    }
+  
+    .slick-center {
+      filter: brightness(1);
+    }
+
+  

@@ -1,0 +1,110 @@
+/* Set the container to b a full-height, overflow hidden div */
+.staged-scrolling-gallery {
+    background-color: #f5f5f5;
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Change this value to adjust the gallery height */
+    overflow: hidden;
+  }
+  .gallery-title-sc {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    /* margin-top: 80px; */
+  }
+  
+  /* Center the images container horizontally and vertically */
+  .images-container {
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style each image to be a square with cover object-fit and 0.5 opacity */
+  .image {
+    width: 25vw; /* Change this value to adjust the image size */
+    height: 25vw; /* Change this value to adjust the image size */
+    object-fit: cover;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out; /* Add a transition effect on opacity and transform */
+  }
+  
+  /* Style the active image to have full opacity and 1.2 scale */
+  .image.active {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  /* Center the arrows container vertically and position it at the left and right edges */
+  .arrows-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style the buttons to be transparent with no border and white color */
+button {
+    position: absolute;
+    /* width: px; */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    font-size: 3rem; /* Change this value to adjust the arrow size */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .prev{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: smaller;
+    padding: 5px;
+  } 
+  .next{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: smaller;
+    padding: 5px;
+  } 
+  
+  /* Change the arrow color on hover */
+  button:hover {
+    color: #ff6f61;
+    background-color: white;
+  }
+  
+  /* Position the previous arrow on the left and the next arrow on the right */
+  .prev {
+    left: 1rem;
+  }
+  
+  .next {
+    right: 1rem;
+  }
+  
+  /* Adjust the font size of the chevron icons */
+  .fa-chevron-left, .fa-chevron-right {
+    width: 1em;
+  }
+  
+  /* Add a media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .image {
+      width: 50vw;
+      height: 50vw;
+    }
+    
+    button {
+      font-size: 2rem;
+    }
+  }
+  

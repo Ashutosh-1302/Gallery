@@ -1,0 +1,79 @@
+.landing-page-cover {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .landing-page-cover img {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  button .land{
+    /* margin-right: 100%; */
+    /* margin-left: 50%; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .land{
+    padding: 1rem 2rem;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    top: 90%;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+
+  }
+  
+  .land:hover {
+    background-color: #d13e30;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
